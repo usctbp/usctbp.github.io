@@ -9,7 +9,7 @@ layout: default
 					</header>
 		{% for post in site.posts offset: 0 limit: 10 %}
 			<h3>{{ post.title }}</h3>
-<!-- 			<span class="date">{{ post.date | date_to_string }}</span> -->
+ 			<span class="date">{{ post.date | date_to_string }}</span> 
 			<section class="box special">
 				{{ post.content }}
 			</section>
