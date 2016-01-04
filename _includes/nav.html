@@ -1,14 +1,29 @@
 <!-- Header -->
-	<header id="header" class="alt">
+{% if page.url == "/index.html" %}
+	<!-- Banner -->
+				<header id="header" class="alt">
+					{% else %}
+				<header id="header">
+					{% endif %}
 		<h1><a href="{{ site.baseurl }}/index.html">Tau Beta Pi</a> USC</h1>
 		<nav id="nav">
 			<ul>
 				<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
 				<li><a href="{{ site.baseurl }}/whyjoin.html">Why Join?</a></li>
-				<li><a href="{{ site.baseurl }}/announcements">Announcements</a></li>
+				<li><a href="{{ site.baseurl }}/announcements.html">Announcements</a></li>
+				<li><a href="{{ site.baseurl }}/photos.html">Photos</a></li>
 				<li><a href="{{ site.baseurl }}/eboard.html">E-Board</a></li>
+                <li>
+					<a href="" class="icon fa-angle-double-down">Inductees</a>
+					<ul>
+                        {% for inducteeList in site.inductees %}
+						<li><a href="{{ inducteeList.url }}">{{ inducteeList.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+				</li>
 
-<!-- 
+
+<!--
 				<li>
 					<a href="" class="icon fa-angle-down">Layouts</a>
 					<ul>

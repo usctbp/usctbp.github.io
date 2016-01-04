@@ -1,7 +1,7 @@
 ---
-title: New Info Session
+title: Lockheed Martin Info Session!
 layout: post
 ---
 
-<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt=""></span></br>
-<p>We are going to be having an awesome info session about something.</p>
+<span class="image fit"><img src="{{ site.baseurl }}/images/pic03.jpg" alt=""></span>
+<p>We're going to have Lockheed Martin on campus on Monday, October 21st!</p>

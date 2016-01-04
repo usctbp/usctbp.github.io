@@ -1,0 +1,40 @@
+{% include header.html %}
+	{{ content }}
+
+
+				<section id="main" class="container">
+										<header>
+						<h2>Inductees of {{ page.title }}</h2>
+						<p>Tau Beta Pi inducted these accomplished individuals in {{ page.title }}</p>
+					</header>
+					<div class="box">
+						<!-- <h3>This is a subheading</h3> -->
+						<div class="row">
+							<div class="4u 12u(mobilep)">
+<ul class="alt">
+{% for person in page.inducteesone %}
+												<li>{{person}}</li>
+    {% endfor %}
+                                </ul>
+							</div>
+							<div class="4u 12u(mobilep)">
+<ul class="alt">
+{% for person in page.inducteestwo %}
+												<li>{{person}}</li>
+    {% endfor %}
+											</ul>
+							</div>
+                            							<div class="4u 12u(mobilep)">
+<ul class="alt">
+{% for person in page.inducteesthree %}
+												<li>{{person}}</li>
+    {% endfor %}
+											</ul>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+
+{% include footer.html %}

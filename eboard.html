@@ -2,38 +2,41 @@
 title: Why Join?
 layout: default
 ---
-<section class="box special">
+<section id="main" class="container">
 					<header>
 						<h2>Executive Board</h2>
 						<p>Who does what at Tau Beta Pi?</p>
 					</header>
-<div class="row">
-	<div class="6u">
-
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></span>
-			<h3>Cathy Ji</h3>
-			<h4>President</h3>
-			<p>Preside all Eboard and general membership meetings, be informed of TBP regional and national activities, oversee induction/initiation process.</p>
+	<div class="12u">
+		<section class="special">
+            <hr>
+			<h3>Contact Us</h3>
+			<h4>For general questions, comments, or concerns about Tau Beta Pi, please email tbp@usc.edu.</h3>
+			<p>{{person.description}}</p>
 			<ul class="actions">
-				<li><a href="mailto:catherhj@usc.edu" class="button alt">Email</a></li>
+				<li><a href="mailto:tbp@usc.edu" class="button special icon fa-envelope">Email</a></li>
+			</ul>
+            <hr>
+		</section>
+	</div>
+
+    
+    <div class="row">
+    
+    {% for person in site.eboard %}
+	<div class="6u">
+		<section class="box special">
+			<span class="image featured"><img src="{{ site.baseurl }}/images/eboard/{{person.image}}" alt="" /></span>
+			<h3>{{person.name}}</h3>
+			<h4>{{person.role}}</h3>
+			<p>{{person.description}}</p>
+			<ul class="actions">
+				<li><a href="mailto:{{person.email}}" class="button icon alt fa-envelope">Email</a></li>
 			</ul>
 		</section>
-
 	</div>
-	<div class="6u">
+    {% endfor %}
 
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></span>
-			<h3>Varun Jain</h3>
-			<h4>Vice President</h3>
-			<p>Assumes the role of president in the president's absence, other duties as assigned by president.</p>
-			<ul class="actions">
-				<li><a href="mailto:varunj@usc.edu" class="button alt">Email</a></li>
-			</ul>
-		</section>
-
-	</div>
 </div>
 
 				</section>

@@ -2,11 +2,29 @@
 title: Alpha
 layout: default
 ---
-<section class="box special">
+
+<section id="banner">
+												<span><img style="width:50%" src="{{ site.baseurl }}/images/logo.png" alt="" /></span>
+	<h2></h2>
+	<p>California Delta Chapter Est. 1947</p>
+<!--
+	<ul class="actions">
+		<li><a href="#" class="button special">Sign Up</a></li>
+		<li><a href="#" class="button">Learn More</a></li>
+	</ul>
+-->
+</section>
+
+<section id="main" class="container">
+<section class="box">
+    <section class="special">
 	<header>
-						<h2>Welcome to Tau Beta Pi.</h2>
-						<p>We are USC's premier engineering honor society.</p>
+        <h2>Welcome to <strong>Tau Beta Pi</strong></h2>
+						<p>USC's premier engineering honor society</p>
 			</header>
+    </section>
+						<div class="row">
+                            							<div class="6u 12u(mobilep)">
 
 		<p>Tau Beta Pi is a national engineering honor society dedicated to promoting honor, integrity, scholarship, and exemplary character in the field of Engineering. Founded in 1885, it now encompasses over 215 educational institutions nationwide.</br></br>
 
@@ -17,59 +35,21 @@ Engineering graduate students whose scholarship places them in the top fifth of 
 Engineering alumni of a chapter's institution or of another recognized institution whose scholastic record placed them in the top fifth of their class may be elected to membership. Such candidates are usually recommended to the chapter by a member who knows them.</br></br>
 
 Students who qualify will be contacted by standard mail and e-mail.</p>
-	<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></span>
+							</div>
+
+                            							<div class="6u 12u(mobilep)">
+
+	{% assign newestpost = site.posts[0] %}
+	<header>
+						<h4>Newest Announcement:</h4>
+			</header>
+			<h3>{{ newestpost.title }}</h3>
+				{{ newestpost.content }}
+                                							</div>
+
+
+						</div>
+
 </section>
 
-<section class="box special features">
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-bolt accent2"></span>
-			<h3>Magna etiam</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-area-chart accent3"></span>
-			<h3>Ipsum dolor</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-cloud accent4"></span>
-			<h3>Sed feugiat</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-lock accent5"></span>
-			<h3>Enim phasellus</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
 </section>
-
-<div class="row">
-	<div class="6u">
-
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></span>
-			<h3>Sed lorem adipiscing</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-	<div class="6u">
-
-		<section class="box special">
-			<span class="image featured"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt="" /></span>
-			<h3>Accumsan integer</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-</div>
