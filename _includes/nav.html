@@ -14,9 +14,10 @@
 				<li><a href="{{ site.baseurl }}/photos.html">Photos</a></li>
 				<li><a href="{{ site.baseurl }}/eboard.html">E-Board</a></li>
                 <li>
-					<a href="" class="icon fa-angle-double-down">Inductees</a>
+					<a href="" class="icon fa-angle-double-down">Hall of Inductees</a>
 					<ul>
-                        {% for inducteeList in site.inductees %}
+                        {% assign indList = site.inductees |  reverse %}
+                        {% for inducteeList in indList %}
 						<li><a href="{{ inducteeList.url }}">{{ inducteeList.title }}</a></li>
                         {% endfor %}
                     </ul>
